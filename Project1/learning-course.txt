@@ -1,0 +1,11 @@
+ # Video 3 Parámetros en URL
+
+En este video se aprende a cómo manejar contenido dinámico y cómo pasar parámatros en URL.
+
+
+Contenido dinámico como un programa que emule un reloj, ya que depende de la hora en que
+lo ejecutes tomará información de la hora y fecha del servidor.
+
+import datetime
+
+fecha_actual = datetime.datetime,now()
