@@ -41,3 +41,10 @@ Se puede trabajar a la vez tanto en HTML (diseño) y en la lógica (python)
 	ctx = Context()
 3. Renderizar objeto template
 	documento = ptl.render(ctx)
+
+//LOS PROCEDIMIENTOS VISTOS EN EL VIDEO 5 DE PLANTILLAS SE PUEDEN OPTIMIZAR UTILIZANDO CARGADORES//
+
+
+
+ #Video 6 Plantillas II, Variables y propiedades desde plantillas
+
