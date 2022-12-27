@@ -1,4 +1,4 @@
- # Video 3 Parámetros en URL
+ # Video 4 Parámetros en URL
 
 En este video se aprende a cómo manejar contenido dinámico y cómo pasar parámatros en URL.
 
@@ -9,3 +9,35 @@ lo ejecutes tomará información de la hora y fecha del servidor.
 import datetime
 
 fecha_actual = datetime.datetime,now()
+
+-Pasar parámetros a través de la URL  // Django es URL friendly, utiliza URL muy sencilla, que simplifica todo
+Para este ejemplo crearemos una vista que calcule que edad tendremos en un año determinado en el futuro.
+	
+	define function_name(request, parametro1, parametro2):
+
+		return HttpResponse(documento)
+
+En urls.py -> 
+from Project1.views import function_name
+path('edades/<int:edad>/<int:year>',calculaEdad)
+
+
+ #Video 5 Plantillas
+
+Las plantillas son cadenas de texto que pueden contener código html(más común en este curso), pero no solo código html,
+sino podemos agregar plantillas con cualquier documento de texto plano.
+
+Sirven para separar la parte lógica (datos) de la parte visual (presentación) de un documento web.
+
+Se puede trabajar a la vez tanto en HTML (diseño) y en la lógica (python)
+
+¿Cómo se usan? 
+
+3 pasos
+
+1. es crear un objeto de tipo template 
+	plt = Template(doc_externo.read())
+2. creación de contexto --> datos adicionales que puede utilizar la plantilla
+	ctx = Context()
+3. Renderizar objeto template
+	documento = ptl.render(ctx)
