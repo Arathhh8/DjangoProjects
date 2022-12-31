@@ -15,6 +15,7 @@ def saludo(request):   # primera vista
 
     #nombre = "Arath"
     #apellido = "García"
+    temasDelCurso = []
 
     actual = datetime.datetime.now()
 
@@ -22,7 +23,7 @@ def saludo(request):   # primera vista
     plt = Template(doc_externo.read())
     doc_externo.close()
 
-    ctx = Context({"nombre_persona":p1.nombre, "apellido_persona":p1.apellido, "ahora_actual":actual})
+    ctx = Context({"nombre_persona":p1.nombre, "apellido_persona":p1.apellido, "ahora_actual":actual, "temas":temasDelCurso})
 
     #RENDERIZAR DOCUMENTO
 
@@ -32,7 +33,7 @@ def saludo(request):   # primera vista
 
 def despedida(request):
 
-    return HttpResponse("See you soon!!!")
+    return HttpResponse("See you soon!!!!!")
 
 def dameFecha(request):
 

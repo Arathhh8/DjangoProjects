@@ -5,5 +5,21 @@
         </h2>
     <p>Developer: {{nombre_persona}} {{apellido_persona}}</p>
     <p>You are watching my profile at: {{ahora_actual}}, enjoy your time here!</p>
+        <p><strong>Temas del curso: </strong></p>
+        <p>
+            <ul>
+            {% if temas %}
+                {% for i in temas %}
+
+                    <li>{{i}}</li>
+
+                {% endfor %}
+            {% else %}
+                <p>No hay elementos para mostrar</p>
+            {% endif %}
+
+            </ul>
+
+        </p>
     </body>
 </html>
