@@ -1,9 +1,23 @@
 <html>
     <body>
+
+        {% include "superior/barra.html" %}
+
         <h2 style="color: blue">
         Hello world, welcome to my first template with Django!
         </h2>
-    <p>Developer: {{nombre_persona}} {{apellido_persona}}</p>
+
+        {% if nombre_persona == ' Ing. Arath' %}
+
+        <p> El curso lo imparte el profesor titular</p>
+
+        {% else %}
+
+        <p> El curso lo imparte el profesor suplente</p>
+
+        {% endif %}
+
+    <p>Developer: {{nombre_persona.upper}} {{apellido_persona.lower}}</p>
     <p>You are watching my profile at: {{ahora_actual}}, enjoy your time here!</p>
         <p><strong>Temas del curso: </strong></p>
         <p>
